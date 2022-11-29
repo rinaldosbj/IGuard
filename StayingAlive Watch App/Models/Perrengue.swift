@@ -6,10 +6,16 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Perrengue: Codable {
     
     let name: String
+    let imageURL : String
     let instructions: [String]
+    
+    var image : Image {
+        Image(self.imageURL)
+    }
     
 }

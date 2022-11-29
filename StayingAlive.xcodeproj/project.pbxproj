@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172F9ED92936AFE6006C78E9 /* EmergencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */; };
 		17844478292D5503008E3DF4 /* StayingAlive Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 17844477292D5503008E3DF4 /* StayingAlive Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1784447D292D5503008E3DF4 /* StayingAliveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784447C292D5503008E3DF4 /* StayingAliveApp.swift */; };
 		1784447F292D5503008E3DF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784447E292D5503008E3DF4 /* ContentView.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyRow.swift; sourceTree = "<group>"; };
 		17844471292D5503008E3DF4 /* StayingAlive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayingAlive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17844477292D5503008E3DF4 /* StayingAlive Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StayingAlive Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1784447C292D5503008E3DF4 /* StayingAliveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayingAliveApp.swift; sourceTree = "<group>"; };
@@ -72,6 +74,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172F9EDA2936B002006C78E9 /* Emergency */ = {
+			isa = PBXGroup;
+			children = (
+				D3553B6E2936A61C00793043 /* EmergencyView.swift */,
+				172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */,
+			);
+			path = Emergency;
+			sourceTree = "<group>";
+		};
+		172F9EDB2936B1C8006C78E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				172F9EDA2936B002006C78E9 /* Emergency */,
+				17F5813B29367B3300734A61 /* HomeView.swift */,
+				D3553B6C2936A20100793043 /* TransitionView.swift */,
+				D3D3603229369DF400A74DD6 /* MonitandoView.swift */,
+				D3EAB71B293688EC007A9D29 /* Onboarding3View.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1784446A292D5503008E3DF4 = {
 			isa = PBXGroup;
 			children = (
@@ -92,14 +115,10 @@
 		1784447B292D5503008E3DF4 /* StayingAlive Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				C050C7502933A5F800CE8BAB /* Models */,
 				1784447C292D5503008E3DF4 /* StayingAliveApp.swift */,
 				1784447E292D5503008E3DF4 /* ContentView.swift */,
-				17F5813B29367B3300734A61 /* HomeView.swift */,
-				D3553B6C2936A20100793043 /* TransitionView.swift */,
-				D3D3603229369DF400A74DD6 /* MonitandoView.swift */,
-				D3553B6E2936A61C00793043 /* EmergencyView.swift */,
-				D3EAB71B293688EC007A9D29 /* Onboarding3View.swift */,
+				C050C7502933A5F800CE8BAB /* Models */,
+				172F9EDB2936B1C8006C78E9 /* Views */,
 				17844480292D5504008E3DF4 /* Assets.xcassets */,
 				17844482292D5504008E3DF4 /* Preview Content */,
 			);
@@ -223,6 +242,7 @@
 			files = (
 				17F5813C29367B3300734A61 /* HomeView.swift in Sources */,
 				D3D3603329369DF400A74DD6 /* MonitandoView.swift in Sources */,
+				172F9ED92936AFE6006C78E9 /* EmergencyRow.swift in Sources */,
 				C050C7522933A6FF00CE8BAB /* Perrengue.swift in Sources */,
 				C050C7542933A84300CE8BAB /* Model+Populate.swift in Sources */,
 				D3EAB71C293688EC007A9D29 /* Onboarding3View.swift in Sources */,
