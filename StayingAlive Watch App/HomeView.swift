@@ -14,7 +14,13 @@ struct HomeView: View {
         NavigationStack{
             ZStack{
                 NavigationLink("", destination: TransitionView().navigationBarBackButtonHidden(true) ,isActive: $shouldShow).buttonStyle(.borderless)
-                NavigationLink("", destination: EmergencyView().navigationBarBackButtonHidden(true) ,isActive: $shouldShowEmergency).buttonStyle(.borderless)
+                    .onAppear(){
+                        shouldShow = false
+                    }
+                NavigationLink("", destination: EmergencyView() ,isActive: $shouldShowEmergency).buttonStyle(.borderless)
+                    .onAppear(){
+                        shouldShowEmergency = false
+                    }
                 VStack {
                     VStack(spacing: 12) {
                         Button(action: {

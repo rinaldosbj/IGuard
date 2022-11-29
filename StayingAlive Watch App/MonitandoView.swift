@@ -9,9 +9,17 @@ import SwiftUI
 
 struct MonitandoView: View {
     @State private var shouldShowEmergency: Bool = false
+    @State private var shouldShow: Bool = false
     var body: some View {
         ZStack{
-            NavigationLink("", destination: EmergencyView().navigationBarBackButtonHidden(true) ,isActive: $shouldShowEmergency).buttonStyle(.borderless)
+            NavigationLink("", destination: EmergencyView(),isActive: $shouldShowEmergency).buttonStyle(.borderless)
+                .onAppear(){
+                    shouldShowEmergency = false
+                }
+            NavigationLink("", destination: HomeView().navigationBarBackButtonHidden(true) ,isActive: $shouldShow).buttonStyle(.borderless)
+                .onAppear(){
+                    shouldShow = false
+                }
             VStack {
                 VStack(spacing: 10) {
                     Button(action: {
@@ -25,13 +33,13 @@ struct MonitandoView: View {
                     
                     HStack{
                         Button(action: {
-                            print("aa")
+                            shouldShow = true
                         }, label: {
                             Text("Parar")
                                 .foregroundColor(.black)
                         }) .background(Color("xLightBlue"))
                             .cornerRadius(15)
-                        Text("5:50")
+                        Text("0:50")
                             .padding(.horizontal,24)
                     }
                     ZStack{
