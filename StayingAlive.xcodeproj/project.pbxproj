@@ -1,12 +1,13 @@
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
-	classes = { 
+	classes = {
 	};
 	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172F9ED7293693B8006C78E9 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9ED6293693B8006C78E9 /* CreditsView.swift */; };
 		17844478292D5503008E3DF4 /* StayingAlive Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 17844477292D5503008E3DF4 /* StayingAlive Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1784447D292D5503008E3DF4 /* StayingAliveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784447C292D5503008E3DF4 /* StayingAliveApp.swift */; };
 		1784447F292D5503008E3DF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784447E292D5503008E3DF4 /* ContentView.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		172F9ED6293693B8006C78E9 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		17844471292D5503008E3DF4 /* StayingAlive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayingAlive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17844477292D5503008E3DF4 /* StayingAlive Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StayingAlive Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1784447C292D5503008E3DF4 /* StayingAliveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayingAliveApp.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				C050C7502933A5F800CE8BAB /* Models */,
 				1784447C292D5503008E3DF4 /* StayingAliveApp.swift */,
+				172F9ED6293693B8006C78E9 /* CreditsView.swift */,
 				1784447E292D5503008E3DF4 /* ContentView.swift */,
 				17F5813B29367B3300734A61 /* HomeView.swift */,
 				17844480292D5504008E3DF4 /* Assets.xcassets */,
@@ -212,6 +215,7 @@
 				17F5813C29367B3300734A61 /* HomeView.swift in Sources */,
 				C050C7522933A6FF00CE8BAB /* Perrengue.swift in Sources */,
 				C050C7542933A84300CE8BAB /* Model+Populate.swift in Sources */,
+				172F9ED7293693B8006C78E9 /* CreditsView.swift in Sources */,
 				1784447F292D5503008E3DF4 /* ContentView.swift in Sources */,
 				1784447D292D5503008E3DF4 /* StayingAliveApp.swift in Sources */,
 			);
