@@ -14,6 +14,7 @@
 		17844484292D5504008E3DF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17844483292D5504008E3DF4 /* Preview Assets.xcassets */; };
 		C050C7522933A6FF00CE8BAB /* Perrengue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7512933A6FF00CE8BAB /* Perrengue.swift */; };
 		C050C7542933A84300CE8BAB /* Model+Populate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7532933A84300CE8BAB /* Model+Populate.swift */; };
+		D3EAB71C293688EC007A9D29 /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EAB71B293688EC007A9D29 /* Onboarding3View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		17844483292D5504008E3DF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C050C7512933A6FF00CE8BAB /* Perrengue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perrengue.swift; sourceTree = "<group>"; };
 		C050C7532933A84300CE8BAB /* Model+Populate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Populate.swift"; sourceTree = "<group>"; };
+		D3EAB71B293688EC007A9D29 /* Onboarding3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				C050C7502933A5F800CE8BAB /* Models */,
 				1784447C292D5503008E3DF4 /* StayingAliveApp.swift */,
 				1784447E292D5503008E3DF4 /* ContentView.swift */,
+				D3EAB71B293688EC007A9D29 /* Onboarding3View.swift */,
 				17844480292D5504008E3DF4 /* Assets.xcassets */,
 				17844482292D5504008E3DF4 /* Preview Content */,
 			);
@@ -208,6 +211,7 @@
 			files = (
 				C050C7522933A6FF00CE8BAB /* Perrengue.swift in Sources */,
 				C050C7542933A84300CE8BAB /* Model+Populate.swift in Sources */,
+				D3EAB71C293688EC007A9D29 /* Onboarding3View.swift in Sources */,
 				1784447F292D5503008E3DF4 /* ContentView.swift in Sources */,
 				1784447D292D5503008E3DF4 /* StayingAliveApp.swift in Sources */,
 			);
