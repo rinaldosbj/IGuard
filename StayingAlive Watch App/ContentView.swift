@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var shouldShow: Bool = false
     var body: some View {
-        ZStack{
-            NavigationLink("", destination: MonitandoView().navigationBarBackButtonHidden(true) ,isActive: $shouldShow).buttonStyle(.borderless)
-        }.onAppear(){
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3.2) {
-                shouldShow.toggle()
-            }
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
         }
+        .padding()
     }
 }
 

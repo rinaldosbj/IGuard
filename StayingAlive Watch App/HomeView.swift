@@ -9,14 +9,16 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var shouldShow: Bool = false
+    @State private var shouldShowEmergency: Bool = false
     var body: some View {
         NavigationStack{
             ZStack{
-                NavigationLink("", destination: ContentView().navigationBarBackButtonHidden(true) ,isActive: $shouldShow).buttonStyle(.borderless)
+                NavigationLink("", destination: TransitionView().navigationBarBackButtonHidden(true) ,isActive: $shouldShow).buttonStyle(.borderless)
+                NavigationLink("", destination: EmergencyView().navigationBarBackButtonHidden(true) ,isActive: $shouldShowEmergency).buttonStyle(.borderless)
                 VStack {
                     VStack(spacing: 12) {
                         Button(action: {
-                            print("clicou em mim")
+                            shouldShowEmergency = true
                         }, label: {
                             Text("Emergência")
                                 .font(.headline)
