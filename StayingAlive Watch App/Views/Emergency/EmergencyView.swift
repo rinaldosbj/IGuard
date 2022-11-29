@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct EmergencyView: View {
+    let perrengues : [Perrengue] = Populate.populateFunc()
+    
     var body: some View {
-        Text("Emergencia")
+        NavigationView {
+            List{
+                ForEach(perrengues, id: \.self) { perrengue in
+                    EmergencyRow(perrengue: perrengue)
+                }
+            }
+            .navigationTitle("Emergência")
+        }
     }
 }
 

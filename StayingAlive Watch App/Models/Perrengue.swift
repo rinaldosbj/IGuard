@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Perrengue: Codable {
+struct Perrengue: Codable, Hashable {
     
     let name: String
     let imageURL : String

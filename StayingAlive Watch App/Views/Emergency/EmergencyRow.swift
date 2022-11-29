@@ -13,6 +13,10 @@ struct EmergencyRow: View {
     var body: some View {
         HStack {
             Text(perrengue.name)
+                .font(.headline)
+                .foregroundColor(.white)
+            Spacer()
+            perrengue.image
             
         }
     }
