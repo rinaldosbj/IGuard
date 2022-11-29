@@ -14,7 +14,9 @@ struct EmergencyView: View {
         NavigationView {
             List{
                 ForEach(perrengues, id: \.self) { perrengue in
-                    EmergencyRow(perrengue: perrengue)
+                    NavigationLink(destination: InstructionsView(perrengue: perrengue)) {
+                        EmergencyRow(perrengue: perrengue)
+                    }
                 }
             }
             .navigationTitle("Emergência")

@@ -14,7 +14,7 @@ struct EmergencyRow: View {
         HStack {
             Text(perrengue.name)
                 .font(.headline)
-                .foregroundColor(.white)
+                .foregroundColor(.accentColor)
             Spacer()
             perrengue.image
             
