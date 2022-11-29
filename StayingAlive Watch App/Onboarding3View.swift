@@ -72,7 +72,7 @@ struct Onboarding3View: View {
                 .clipped()
             Text("Navegue pelas instruções de \(Text("primeiros socorros").bold()) para encontrar o seu ”perrengue”")
                 .multilineTextAlignment(.center)
-                .padding(.top,10)
+                .padding(.top,5)
         }.onAppear(){
             arraste = -80
         }

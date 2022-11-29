@@ -9,11 +9,15 @@ import SwiftUI
 
 struct PageView: View {
     var body: some View {
-        TabView {
-            Onboarding1View()
-            Onboarding2View()
+        NavigationStack{
+            TabView {
+                Onboarding1View()
+                Onboarding2View()
+                Onboarding3View()
+                TransitionToHomeView()
+            }
+            .tabViewStyle(PageTabViewStyle())
         }
-        .tabViewStyle(PageTabViewStyle())
     }
 }
 

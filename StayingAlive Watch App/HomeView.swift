@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    @AppStorage("is First Time") var isFirstTime = true
     @State private var shouldShow: Bool = false
     @State private var shouldShowEmergency: Bool = false
+    @State private var shouldShowOnboarding: Bool = false
     var body: some View {
         NavigationStack{
             ZStack{
@@ -20,6 +22,10 @@ struct HomeView: View {
                 NavigationLink("", destination: EmergencyView() ,isActive: $shouldShowEmergency).buttonStyle(.borderless)
                     .onAppear(){
                         shouldShowEmergency = false
+                    }
+                NavigationLink("", destination: PageView() ,isActive: $shouldShowOnboarding).buttonStyle(.borderless)
+                    .onAppear(){
+                        shouldShowOnboarding = false
                     }
                 VStack {
                     VStack(spacing: 12) {
@@ -46,9 +52,9 @@ struct HomeView: View {
                     
                     HStack {
                         Button(action: {
-                            print("Clicou em mim")
+                            shouldShowOnboarding = true
                         }) {
-                            Image(systemName: "exclamationmark.circle")
+                            Image(systemName: "questionmark.circle")
                                 .resizable()
                                 .frame(width: 18.18, height: 18.18)
                         }
@@ -71,6 +77,8 @@ struct HomeView: View {
                 .padding(.bottom, -12)
                 
                 
+            }.onAppear(){
+                isFirstTime = false
             }
         }
     }
