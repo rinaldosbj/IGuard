@@ -14,11 +14,10 @@ struct ContentView: View {
     var body: some View {
         if isFirstTime {
             PageView()
-                .onAppear{
-                    isFirstTime = false
-                }
         } else {
-            HomeView()
+            HomeView() .onAppear{
+                isFirstTime = false
+            }
         }
     }
 }
