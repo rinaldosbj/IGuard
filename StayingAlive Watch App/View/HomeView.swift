@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-
+    
     
     var body: some View {
         NavigationView{
@@ -18,14 +18,16 @@ struct HomeView: View {
                     Text("Emergência")
                         .font(.headline)
                         .foregroundColor(.white)
-                }.background(Color(.blue))
-                    .cornerRadius(15)
+                }
+                .background(Color(.blue))
+                .cornerRadius(15)
                 
                 NavigationLink(destination: MonitandoView()) {
                     Text("Monitorar")
                         .foregroundColor(.black)
-                } .background(Color("xLightBlue"))
-                    .cornerRadius(15)
+                }
+                .background(Color("xLightBlue"))
+                .cornerRadius(15)
                 
                 Spacer()
                 
@@ -51,7 +53,7 @@ struct HomeView: View {
             }
             .padding(.top, 19)
             .padding(.bottom, -12)
-            
+            .navigationTitle("IGuard")
         }
     }
 }
