@@ -78,15 +78,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		172F9EDA2936B002006C78E9 /* Emergency */ = {
-			isa = PBXGroup;
-			children = (
-				D3553B6E2936A61C00793043 /* EmergencyView.swift */,
-				172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */,
-			);
-			path = Emergency;
-			sourceTree = "<group>";
-		};
 		172F9EE02936BE75006C78E9 /* Instructions */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,8 +107,9 @@
 		1784447B292D5503008E3DF4 /* StayingAlive Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				D3553B6E2936A61C00793043 /* EmergencyView.swift */,
+				172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */,
 				172F9EE02936BE75006C78E9 /* Instructions */,
-				172F9EDA2936B002006C78E9 /* Emergency */,
 				17F5813B29367B3300734A61 /* HomeView.swift */,
 				D3553B6C2936A20100793043 /* TransitionView.swift */,
 				D3D3603229369DF400A74DD6 /* MonitandoView.swift */,
