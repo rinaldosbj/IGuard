@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172F9ED7293693B8006C78E9 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9ED6293693B8006C78E9 /* CreditsView.swift */; };
 		172F9ED92936AFE6006C78E9 /* EmergencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */; };
 		172F9EDD2936BC07006C78E9 /* InstructionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9EDC2936BC07006C78E9 /* InstructionsRow.swift */; };
 		172F9EDF2936BE6F006C78E9 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9EDE2936BE6F006C78E9 /* InstructionsView.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		172F9ED6293693B8006C78E9 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyRow.swift; sourceTree = "<group>"; };
 		172F9EDC2936BC07006C78E9 /* InstructionsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsRow.swift; sourceTree = "<group>"; };
 		172F9EDE2936BE6F006C78E9 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		171D9FFF2936DE280093AE6C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				172F9ED6293693B8006C78E9 /* CreditsView.swift */,
 				C050C7572936876300CE8BAB /* PageView.swift */,
 				C050C7552936798000CE8BAB /* Onboarding1View.swift */,
 				C050C7592936904700CE8BAB /* Onboarding2View.swift */,
@@ -275,6 +278,7 @@
 				C050C7522933A6FF00CE8BAB /* Perrengue.swift in Sources */,
 				C050C7582936876300CE8BAB /* PageView.swift in Sources */,
 				C050C7542933A84300CE8BAB /* Model+Populate.swift in Sources */,
+				172F9ED7293693B8006C78E9 /* CreditsView.swift in Sources */,
 				D3EAB71C293688EC007A9D29 /* Onboarding3View.swift in Sources */,
 				D3553B6F2936A61C00793043 /* EmergencyView.swift in Sources */,
 				D3553B6D2936A20100793043 /* TransitionView.swift in Sources */,
