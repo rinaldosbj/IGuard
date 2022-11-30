@@ -25,7 +25,7 @@ struct InstructionsView: View {
                 .padding()
         }
         .listStyle(.elliptical)
-        .navigationTitle(perrengue.name)
+        //.navigationTitle(perrengue.name)
     }
 }
 

@@ -10,79 +10,71 @@ import SwiftUI
 struct MonitandoView: View {
     @State private var shouldShowEmergency: Bool = false
     @State private var shouldShow: Bool = false
+    
     var body: some View {
-        ZStack{
-            NavigationLink("", destination: EmergencyView(),isActive: $shouldShowEmergency).buttonStyle(.borderless)
-                .onAppear(){
-                    shouldShowEmergency = false
-                }
-            NavigationLink("", destination: HomeView().navigationBarBackButtonHidden(true) ,isActive: $shouldShow).buttonStyle(.borderless)
-                .onAppear(){
-                    shouldShow = false
-                }
+        NavigationView {
             VStack {
                 VStack(spacing: 10) {
-                    Button(action: {
-                        shouldShowEmergency = true
-                    }, label: {
+                    NavigationLink(destination: EmergencyView()) {
                         Text("Emergência")
                             .font(.headline)
                             .foregroundColor(.white)
-                    }) .background(Color(.blue))
+                    } .background(Color(.blue))
                         .cornerRadius(15)
+                }
+                
+                HStack{
+                    NavigationLink(destination: {HomeView()}) {
+                        Text("Parar")
+                            .foregroundColor(.black)
+                    } .background(Color("xLightBlue"))
+                        .cornerRadius(15)
+                    Text("0:50")
+                        .padding(.horizontal,24)
                     
+                }
+                
+                ZStack{
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
                     HStack{
-                        Button(action: {
-                            shouldShow = true
-                        }, label: {
-                            Text("Parar")
-                                .foregroundColor(.black)
-                        }) .background(Color("xLightBlue"))
-                            .cornerRadius(15)
-                        Text("0:50")
-                            .padding(.horizontal,24)
-                    }
-                    ZStack{
                         RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        HStack{
-                            RoundedRectangle(cornerRadius: 8, style: .continuous)
-                                .frame(width: 30)
-                                .foregroundColor(Color("xLightBlue"))
-                            Spacer()
-                        }
-                    }.padding(.bottom,8)
+                            .frame(width: 30)
+                            .foregroundColor(Color("xLightBlue"))
+                        Spacer()
+                    }
+                }.padding(.bottom,8)
+            }
+            
+            Spacer()
+            
+            HStack {
+                Button(action: {
+                    print("Clicou em mim")
+                }) {
+                    Image(systemName: "exclamationmark.circle")
+                        .resizable()
+                        .frame(width: 18.18, height: 18.18)
                 }
                 
                 Spacer()
                 
-                HStack {
-                    Button(action: {
-                        print("Clicou em mim")
-                    }) {
-                        Image(systemName: "exclamationmark.circle")
-                            .resizable()
-                            .frame(width: 18.18, height: 18.18)
-                    }
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        print("Clicou em mim")
-                    }) {
-                        Image(systemName: "c.circle")
-                            .resizable()
-                            .frame(width: 18.18, height: 18.18)
-                    }
-                    
-                    
-                }.buttonStyle(.borderless)
+                Button(action: {
+                    print("Clicou em mim")
+                }) {
+                    Image(systemName: "c.circle")
+                        .resizable()
+                        .frame(width: 18.18, height: 18.18)
+                }
                 
-            }
-            .padding(.top, 19)
-            .padding(.bottom, -12)
+                
+            }.buttonStyle(.borderless)
+            
         }
+        .padding(.top, 19)
+        .padding(.bottom, -12)
     }
 }
+
 
 struct MonitandoView_Previews: PreviewProvider {
     static var previews: some View {

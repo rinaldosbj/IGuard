@@ -19,7 +19,7 @@ struct EmergencyView: View {
                     }
                 }
             }
-            .navigationTitle("Emergência")
+            //.navigationTitle("Emergência")
         }
     }
 }

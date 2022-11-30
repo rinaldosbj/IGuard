@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("is First Time") var isFirstTime = true
+    
     var body: some View {
-        EmergencyView()
-//        VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundColor(.accentColor)
-//            Text("Hello, world!")
-//        }
-//        .padding()
+        if isFirstTime {
+            PageView()
+        } else {
+            HomeView() .onAppear{
+                isFirstTime = false
+            }
+        }
     }
 }
 
