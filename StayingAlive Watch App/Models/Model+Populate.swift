@@ -9,13 +9,14 @@ import Foundation
 
 class Populate {
     
-    func populateFunc () -> [Perrengue] {
+    static func populateFunc () -> [Perrengue] {
         
         return [
             
             //MARK: - PICADA
             
             Perrengue(name: "Picada",
+                      imageURL: "Snake",
                       instructions: [
                         "Não amarre (torniquete) o membro acometido e não tente “chupar o veneno”.",
                         "Retire o sapatos, pulseiras ou anéis que possam estar no membro acometido.",
@@ -28,6 +29,7 @@ class Populate {
             //MARK: - QUEIMADURA
             
             Perrengue(name: "Queimadura",
+                      imageURL: "Fire",
                       instructions: [
                         "Coloque a área da queimadura debaixo de água corrente.",
                         "Não remova nada que esteja colado a queimadura, evitando piorar a lesão.",
@@ -38,6 +40,7 @@ class Populate {
             //MARK: - FRATURA
             
             Perrengue(name: "Fratura",
+                      imageURL: "Broken Bone",
                       instructions: [
                         "Caso a fratura seja exposta, tente lavar a área para evitar infecções.",
                         "Imobilize o membro com o objeto encontrado.",
@@ -49,6 +52,7 @@ class Populate {
             //MARK: - INSOLAÇÃO
             
             Perrengue(name: "Insolação",
+                      imageURL: "Taiwan, China Emblem",
                       instructions: [
                         "Tão logo seja possível, tome um banho frio ou envolta-se em panos ou roupas encharcadas.",
                         "Podem ser aplicadas compressas de água fria na testa, pescoço, axilas e virilhas.",
@@ -62,6 +66,7 @@ class Populate {
             //MARK: - HIPOTERMIA
             
             Perrengue(name: "Hipotermia",
+                      imageURL: "Thermometer Down",
                       instructions: [
                         "Procure um ambiente aquecido.",
                         "Aqueça seu corpo com bebidas quentes ou cobertas.",
@@ -72,6 +77,7 @@ class Populate {
             //MARK: - HEMORRAGIA
             
             Perrengue(name: "Hemorragia",
+                      imageURL: "Wound",
                       instructions: [
                         "Aplique pressão sobre a hemorragia com um pano ou tecido limpo.",
                         "Isso irá estancar ou reduzir fluxo sanguíneo, ajudando na coagulação de hemorragia.",
@@ -83,6 +89,7 @@ class Populate {
             //MARK: - PERDA DE CONSCIÊNCIA
             
             Perrengue(name: "Perda de Consciência",
+                      imageURL: "Dizzy Person",
                       instructions: [
                         "Primeiramente, observe se a pessoa está respirando observando a movimentação do tórax.",
                         "Caso não esteja respirando, ligue imediatamente para o SAMU.",
@@ -97,6 +104,7 @@ class Populate {
             //MARK: - ENGASGO
             
             Perrengue(name: "Engasgo",
+                      imageURL: "Bully",
                       instructions: [
                         "Em caso de engasgo leve, tussa 5 vezes com força.",
                         "Bata 5 vezes no meio das costas com a mão aberta.",
@@ -110,6 +118,7 @@ class Populate {
             //MARK: - DISTENSÃO
             
             Perrengue(name: "Distensão",
+                      imageURL: "Sick",
                       instructions: [
                         "Eleve o membro o máximo possível.",
                         "Aplique um saco de gelo na lesão, para reduzir o inchaço e dor.",
@@ -120,6 +129,7 @@ class Populate {
             //MARK: - ANSIEDADE
             
             Perrengue(name: "Ansiedade",
+                      imageURL: "Depression",
                       instructions: [
                         "Use a respiração a seu favor, respirando devagar e relaxando os músculos.",
                         "Foque no tempo presente, voltando a atenção e a consciência para o momento atual.",
