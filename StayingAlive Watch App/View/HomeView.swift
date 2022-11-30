@@ -53,7 +53,7 @@ struct HomeView: View {
             }
             .padding(.top, 19)
             .padding(.bottom, -12)
-            .navigationTitle("IGuard")
+            //.navigationTitle("IGuard")
         }
     }
 }
