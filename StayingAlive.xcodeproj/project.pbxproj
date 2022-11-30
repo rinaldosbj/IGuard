@@ -87,19 +87,6 @@
 			path = Emergency;
 			sourceTree = "<group>";
 		};
-		172F9EDB2936B1C8006C78E9 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				172F9EE02936BE75006C78E9 /* Instructions */,
-				172F9EDA2936B002006C78E9 /* Emergency */,
-				17F5813B29367B3300734A61 /* HomeView.swift */,
-				D3553B6C2936A20100793043 /* TransitionView.swift */,
-				D3D3603229369DF400A74DD6 /* MonitandoView.swift */,
-				D3EAB71B293688EC007A9D29 /* Onboarding3View.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		172F9EE02936BE75006C78E9 /* Instructions */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,10 +116,15 @@
 		1784447B292D5503008E3DF4 /* StayingAlive Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				172F9EE02936BE75006C78E9 /* Instructions */,
+				172F9EDA2936B002006C78E9 /* Emergency */,
+				17F5813B29367B3300734A61 /* HomeView.swift */,
+				D3553B6C2936A20100793043 /* TransitionView.swift */,
+				D3D3603229369DF400A74DD6 /* MonitandoView.swift */,
+				D3EAB71B293688EC007A9D29 /* Onboarding3View.swift */,
 				1784447C292D5503008E3DF4 /* StayingAliveApp.swift */,
 				1784447E292D5503008E3DF4 /* ContentView.swift */,
 				C050C7502933A5F800CE8BAB /* Models */,
-				172F9EDB2936B1C8006C78E9 /* Views */,
 				17844480292D5504008E3DF4 /* Assets.xcassets */,
 				17844482292D5504008E3DF4 /* Preview Content */,
 			);
