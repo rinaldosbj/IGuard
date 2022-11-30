@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var hikingManager : HikingManager
     
     
     var body: some View {
@@ -53,15 +54,18 @@ struct HomeView: View {
             }
             .padding(.top, 19)
             .padding(.bottom, -12)
-            .navigationTitle("IGuard")
+            //.navigationTitle("IGuard")
+        }
+        .onAppear {
+            hikingManager.requestAuthorization()
         }
     }
 }
-
-
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
+    
+    
+    struct HomeView_Previews: PreviewProvider {
+        static var previews: some View {
+            HomeView()
+                .environmentObject(HikingManager())
+        }
     }
-}

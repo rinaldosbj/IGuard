@@ -14,6 +14,7 @@ struct StayingAlive_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(hikingManager)
         }
     }
 }

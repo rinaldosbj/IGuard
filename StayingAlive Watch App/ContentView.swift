@@ -19,9 +19,6 @@ struct ContentView: View {
                 }
         } else {
             HomeView()
-                .onAppear {
-                    hikingManager.requestAuthorization()
-                }
         }
     }
 }
