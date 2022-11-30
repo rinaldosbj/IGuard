@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct StayingAlive_Watch_AppApp: App {
+    var homeView = HomeView()
     var body: some Scene {
         WindowGroup {
-            CreditsView()
+            if homeView.isFirstTime {
+                PageView()
+            } else {
+                HomeView()
+            }
         }
     }
 }
