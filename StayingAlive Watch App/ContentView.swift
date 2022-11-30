@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("is First Time") var isFirstTime = true
+    @EnvironmentObject var hikingManager : HikingManager
     
     var body: some View {
         if isFirstTime {
@@ -18,6 +19,9 @@ struct ContentView: View {
                 }
         } else {
             HomeView()
+                .onAppear {
+                    hikingManager.requestAuthorization()
+                }
         }
     }
 }
@@ -25,5 +29,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(HikingManager())
     }
 }

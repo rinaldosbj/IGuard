@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1706339829379874008B53AF /* HikingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1706339729379874008B53AF /* HikingManager.swift */; };
 		172F9ED92936AFE6006C78E9 /* EmergencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */; };
 		172F9EDD2936BC07006C78E9 /* InstructionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9EDC2936BC07006C78E9 /* InstructionsRow.swift */; };
 		172F9EDF2936BE6F006C78E9 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9EDE2936BE6F006C78E9 /* InstructionsView.swift */; };
@@ -54,6 +55,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1706339729379874008B53AF /* HikingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingManager.swift; sourceTree = "<group>"; };
+		1706339B29379D0C008B53AF /* StayingAlive Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "StayingAlive Watch App.entitlements"; sourceTree = "<group>"; };
+		1706339C29379D7A008B53AF /* StayingAlive-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "StayingAlive-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyRow.swift; sourceTree = "<group>"; };
 		172F9EDC2936BC07006C78E9 /* InstructionsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsRow.swift; sourceTree = "<group>"; };
 		172F9EDE2936BE6F006C78E9 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
@@ -144,8 +148,11 @@
 		1784447B292D5503008E3DF4 /* StayingAlive Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				1706339C29379D7A008B53AF /* StayingAlive-Watch-App-Info.plist */,
+				1706339B29379D0C008B53AF /* StayingAlive Watch App.entitlements */,
 				1784447C292D5503008E3DF4 /* StayingAliveApp.swift */,
 				1784447E292D5503008E3DF4 /* ContentView.swift */,
+				1706339729379874008B53AF /* HikingManager.swift */,
 				171D9FFF2936DE280093AE6C /* View */,
 				C050C7502933A5F800CE8BAB /* Models */,
 				17844480292D5504008E3DF4 /* Assets.xcassets */,
@@ -282,6 +289,7 @@
 				D3EAB71C293688EC007A9D29 /* Onboarding3View.swift in Sources */,
 				D3553B6F2936A61C00793043 /* EmergencyView.swift in Sources */,
 				D3553B6D2936A20100793043 /* TransitionView.swift in Sources */,
+				1706339829379874008B53AF /* HikingManager.swift in Sources */,
 				1784447F292D5503008E3DF4 /* ContentView.swift in Sources */,
 				1784447D292D5503008E3DF4 /* StayingAliveApp.swift in Sources */,
 				C050C7562936798000CE8BAB /* Onboarding1View.swift in Sources */,
@@ -414,12 +422,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "StayingAlive Watch App/StayingAlive Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StayingAlive Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 749Q737TF5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StayingAlive-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = StayingAlive;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -444,12 +454,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "StayingAlive Watch App/StayingAlive Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StayingAlive Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 749Q737TF5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StayingAlive-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = StayingAlive;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
