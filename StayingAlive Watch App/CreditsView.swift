@@ -21,12 +21,13 @@ struct CreditsView: View {
             HStack {
                 Image(systemName: "apple.logo")
                     .resizable()
-                    .frame(width: 22, height: 25)
+                    .frame(width: 20, height: 25)
                     .foregroundColor(.accentColor)
                 Text(
-                    "Apple’s Developer Academy - Recife"
+                    "Apple Developer Academy - Recife"
                 )
             }
+            Spacer()
             
             VStack {
                 ForEach(autores, id: \.self) { autor in
@@ -35,8 +36,13 @@ struct CreditsView: View {
                 
             }
             .padding(10)
-            .border(Color("xLightBlue"))
-        }
+            .overlay( /// apply a rounded border
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(lineWidth: 1.5)
+                    .foregroundColor(.accentColor)
+            )
+           
+            }
     }
 }
 
