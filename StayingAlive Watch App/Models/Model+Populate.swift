@@ -18,12 +18,11 @@ class Populate {
             Perrengue(name: "Picada",
                       imageURL: "Snake",
                       instructions: [
-                        "Não amarre (torniquete) o membro acometido e não tente “chupar o veneno”.",
-                        "Retire o sapatos, pulseiras ou anéis que possam estar no membro acometido.",
-                        "Em caso de água viva, realize compressas de agua do mar gelada ou gelo.",
-                        "Em caso de água viva, se possível, fazer a remoção dos tentáculos aderidos com uma pinça.",
+                        "Não comprima o membro acometido e não tente “chupar o veneno”.",
+                        "Retire acessórios que possam estar no membro acometido.",
+                        "Realize compressas de água do mar gelada ou gelo.",
                         "Fique em repouso com o membro acometido mais elevado.",
-                        "Lave o local da ferida (se não for caso de água viva)."
+                        "Lave o local da ferida."
                       ]),
             
             //MARK: - QUEIMADURA
@@ -32,9 +31,8 @@ class Populate {
                       imageURL: "Fire",
                       instructions: [
                         "Coloque a área da queimadura debaixo de água corrente.",
-                        "Não remova nada que esteja colado a queimadura, evitando piorar a lesão.",
-                        "Seque e cubra-a lesão com uma gaze molhada.",
-                        "Assim que possível, se encaminhe para o serviço especializado."
+                        "Não remova nada que esteja colado à queimadura, evitando piorar a lesão.",
+                        "Seque e cubra-a lesão com uma gaze molhada."
                       ]),
             
             //MARK: - FRATURA
@@ -54,11 +52,10 @@ class Populate {
             Perrengue(name: "Insolação",
                       imageURL: "Taiwan, China Emblem",
                       instructions: [
-                        "Tão logo seja possível, tome um banho frio ou envolta-se em panos ou roupas encharcadas.",
-                        "Podem ser aplicadas compressas de água fria na testa, pescoço, axilas e virilhas.",
-                        "Fique em repouso e recostado (cabeça elevada).",
+                        "Tome um banho frio ou envolta-se em panos ou roupas encharcadas.",
+                        "Coloque água fria na testa, pescoço, axilas e virilhas.",
+                        "Fique em repouso e recostado, com a cabeça elevada.",
                         "Remova o máximo de peças de roupa.",
-                        "Se possível, borrife água fria em todo seu corpo, delicadamente.",
                         "Beba bastante água fria ou gelada ou qualquer líquido não alcoólico.",
                         "Vá para um local fresco, à sombra e ventilado."
                       ]),
@@ -80,7 +77,6 @@ class Populate {
                       imageURL: "Wound",
                       instructions: [
                         "Aplique pressão sobre a hemorragia com um pano ou tecido limpo.",
-                        "Isso irá estancar ou reduzir fluxo sanguíneo, ajudando na coagulação de hemorragia.",
                         "Caso o ferimento tenha atingindo um membro, braço ou perna, você pode utilizar um cinto ou corda.",
                         "Aperte o cinto próximo ao ferimento com o intuito de restringir o fluxo sanguíneo no membro.",
                         "Mantenha a pressão aplicada até conseguir ajuda especializada."
