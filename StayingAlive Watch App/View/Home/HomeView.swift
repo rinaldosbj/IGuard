@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject var hikingManager : HikingManager
+    @StateObject private var hikingManager = HikingManager()
     @EnvironmentObject var persistence : Persistence
     
     var body: some View {
