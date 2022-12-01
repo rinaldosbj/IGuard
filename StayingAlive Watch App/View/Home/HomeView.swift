@@ -16,25 +16,28 @@ struct HomeView: View {
             
             VStack(spacing: 12) {
                 Spacer()
-                NavigationLink(destination: EmergencyView()) {
-                    Text("Emergência")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                }
-                .background(Color(Constants.TurquoiseColor))
-                .cornerRadius(15)
-                .frame(height: 50)
-                
                 ZStack{
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(Color(Constants.TurquoiseColor))
+                    NavigationLink(destination: EmergencyView()) {
+                        Text("Emergência")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                    }
+                    .background(Color(Constants.TurquoiseColor))
+                    .cornerRadius(15)
+                    .frame(height: 50)
+                }
+                ZStack{
+                    RoundedRectangle(cornerRadius: 15)
+                        .stroke(lineWidth: 1 )
+                        .foregroundColor(Color(Constants.TurquoiseColor))
                     NavigationLink(destination: MonitandoView()) {
                         Text("Monitorar")
                             .foregroundColor(.white)
                     }
                     .buttonStyle(.borderless)
                     .cornerRadius(15)
-                    RoundedRectangle(cornerRadius: 15)
-                        .stroke(lineWidth: 1 )
-                        .foregroundColor(Color(Constants.TurquoiseColor))
                 }.frame(height: 50)
                 
                 Spacer()
