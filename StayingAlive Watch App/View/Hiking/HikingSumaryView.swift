@@ -33,7 +33,7 @@ struct HikingSumaryView: View {
                 Button(action: {
                     print("Clicou em mim")}) {
                         Text("Fechar")
-                            .foregroundColor(Color("xLightBlue"))
+                            .foregroundColor(Color(Constants.TurquoiseColor))
                     }
             }
             .padding()

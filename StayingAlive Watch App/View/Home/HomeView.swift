@@ -21,7 +21,7 @@ struct HomeView: View {
                         .font(.headline)
                         .foregroundColor(.white)
                 }
-                .background(Color(.blue))
+                .background(Color(Constants.TurquoiseColor))
                 .cornerRadius(15)
                 .frame(height: 50)
                 
@@ -34,7 +34,7 @@ struct HomeView: View {
                     .cornerRadius(15)
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(lineWidth: 1 )
-                        .foregroundColor(.white)
+                        .foregroundColor(Color(Constants.TurquoiseColor))
                 }.frame(height: 50)
                 
                 Spacer()

@@ -12,6 +12,7 @@
 		172F9ED92936AFE6006C78E9 /* EmergencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */; };
 		172F9EDD2936BC07006C78E9 /* InstructionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9EDC2936BC07006C78E9 /* InstructionsRow.swift */; };
 		172F9EDF2936BE6F006C78E9 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9EDE2936BE6F006C78E9 /* InstructionsView.swift */; };
+		1746E6C42939391400C54254 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746E6C32939391400C54254 /* Constants.swift */; };
 		175307242937907300990300 /* HikingSumaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175307232937907300990300 /* HikingSumaryView.swift */; };
 		17844478292D5503008E3DF4 /* StayingAlive Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 17844477292D5503008E3DF4 /* StayingAlive Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1784447D292D5503008E3DF4 /* StayingAliveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784447C292D5503008E3DF4 /* StayingAliveApp.swift */; };
@@ -63,6 +64,7 @@
 		172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyRow.swift; sourceTree = "<group>"; };
 		172F9EDC2936BC07006C78E9 /* InstructionsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsRow.swift; sourceTree = "<group>"; };
 		172F9EDE2936BE6F006C78E9 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
+		1746E6C32939391400C54254 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		175307232937907300990300 /* HikingSumaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingSumaryView.swift; sourceTree = "<group>"; };
 		17844471292D5503008E3DF4 /* StayingAlive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayingAlive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17844477292D5503008E3DF4 /* StayingAlive Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StayingAlive Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 			children = (
 				C050C7512933A6FF00CE8BAB /* Perrengue.swift */,
 				C050C7532933A84300CE8BAB /* Model+Populate.swift */,
+				1746E6C32939391400C54254 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				D3553B6F2936A61C00793043 /* EmergencyView.swift in Sources */,
 				D3553B6D2936A20100793043 /* TransitionToMonitorandoView.swift in Sources */,
 				1706339829379874008B53AF /* HikingManager.swift in Sources */,
+				1746E6C42939391400C54254 /* Constants.swift in Sources */,
 				1784447F292D5503008E3DF4 /* ContentView.swift in Sources */,
 				1784447D292D5503008E3DF4 /* StayingAliveApp.swift in Sources */,
 				C050C7562936798000CE8BAB /* Onboarding1View.swift in Sources */,

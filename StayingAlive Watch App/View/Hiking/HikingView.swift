@@ -27,7 +27,7 @@ struct MonitandoView: View {
                     NavigationLink(destination: {HomeView()}) {
                         Text("Parar")
                             .foregroundColor(.black)
-                    } .background(Color("xLightBlue"))
+                    } .background(Color(Constants.TurquoiseColor))
                         .cornerRadius(15)
                     Text("0:50")
                         .padding(.horizontal,24)
@@ -39,7 +39,7 @@ struct MonitandoView: View {
                     HStack{
                         RoundedRectangle(cornerRadius: 8, style: .continuous)
                             .frame(width: 30)
-                            .foregroundColor(Color("xLightBlue"))
+                            .foregroundColor(Color(Constants.TurquoiseColor))
                         Spacer()
                     }
                 }.padding(.bottom,8)
