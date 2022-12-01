@@ -15,6 +15,7 @@ struct PageView: View {
                 Onboarding2View()
                 Onboarding3View()
                 TransitionToHomeView()
+
             }
             .tabViewStyle(PageTabViewStyle())
         }
