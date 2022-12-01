@@ -17,7 +17,6 @@ struct CreditsView: View {
     
     var body: some View {
         VStack {
-            
             HStack {
                 Image(systemName: "apple.logo")
                     .resizable()

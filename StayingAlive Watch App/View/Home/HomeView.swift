@@ -13,7 +13,6 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView{
-            
             VStack(spacing: 12) {
                 Spacer()
                 ZStack{
@@ -63,8 +62,9 @@ struct HomeView: View {
                 
             }
             .padding(.top, 19)
-            .padding(.bottom, -12)
-            //.navigationTitle("IGuard")
+            .padding(.bottom)
+            .padding(.horizontal)
+            .navigationTitle("IGuard")
         }
         .onAppear {
             hikingManager.requestAuthorization()
