@@ -15,6 +15,7 @@ struct HomeView: View {
         NavigationView{
             
             VStack(spacing: 12) {
+                Spacer()
                 NavigationLink(destination: EmergencyView()) {
                     Text("Emergência")
                         .font(.headline)
@@ -22,13 +23,19 @@ struct HomeView: View {
                 }
                 .background(Color(.blue))
                 .cornerRadius(15)
+                .frame(height: 50)
                 
-                NavigationLink(destination: MonitandoView()) {
-                    Text("Monitorar")
-                        .foregroundColor(.black)
-                }
-                .background(Color("xLightBlue"))
-                .cornerRadius(15)
+                ZStack{
+                    NavigationLink(destination: MonitandoView()) {
+                        Text("Monitorar")
+                            .foregroundColor(.white)
+                    }
+                    .buttonStyle(.borderless)
+                    .cornerRadius(15)
+                    RoundedRectangle(cornerRadius: 15)
+                        .stroke(lineWidth: 1 )
+                        .foregroundColor(.white)
+                }.frame(height: 50)
                 
                 Spacer()
                 
