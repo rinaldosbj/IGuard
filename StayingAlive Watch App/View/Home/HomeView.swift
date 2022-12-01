@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
-    @EnvironmentObject var hikingManager : HikingManager
-    
+    @StateObject private var hikingManager = HikingManager()
+    @EnvironmentObject var persistence : Persistence
     
     var body: some View {
-        NavigationView{
-            
+        NavigationView {
             VStack(spacing: 12) {
                 Spacer()
                 ZStack{
@@ -24,6 +23,7 @@ struct HomeView: View {
                             .font(.headline)
                             .foregroundColor(.white)
                     }
+                    .buttonStyle(.borderless)
                     .background(Color(Constants.TurquoiseColor))
                     .cornerRadius(15)
                     .frame(height: 50)
@@ -63,11 +63,14 @@ struct HomeView: View {
                 
             }
             .padding(.top, 19)
-            .padding(.bottom, -12)
-            //.navigationTitle("IGuard")
+            .padding(.bottom)
+            .padding(.horizontal)
+            .navigationTitle("IGuard")
+            .navigationBarTitleDisplayMode(.inline)
         }
         .onAppear {
             hikingManager.requestAuthorization()
+            persistence.isFirstTime = "no"
         }
     }
 }
@@ -77,5 +80,7 @@ struct HomeView: View {
         static var previews: some View {
             HomeView()
                 .environmentObject(HikingManager())
+                .environmentObject(Persistence())
+            
         }
     }
