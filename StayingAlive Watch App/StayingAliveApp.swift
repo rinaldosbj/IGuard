@@ -9,11 +9,12 @@ import SwiftUI
 
 @main
 struct StayingAlive_Watch_AppApp: App {
-    
+    @StateObject private var hikingManager = HikingManager()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(hikingManager)
         }
     }
 }
