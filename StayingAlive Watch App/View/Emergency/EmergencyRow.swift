@@ -17,6 +17,7 @@ struct EmergencyRow: View {
                 .foregroundColor(.accentColor)
             Spacer()
             perrengue.image
+                .padding(.trailing)
             
         }
     }
