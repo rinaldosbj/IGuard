@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PageView: View {
+struct OnboardingView: View {
     var body: some View {
         NavigationStack{
             TabView {
@@ -24,6 +24,6 @@ struct PageView: View {
 
 struct PageView_Previews: PreviewProvider {
     static var previews: some View {
-        PageView()
+        OnboardingView()
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @StateObject private var hikingManager = HikingManager()
     @EnvironmentObject var persistence : Persistence
+    @State var showingUnboarding = false
     
     var body: some View {
         NavigationView {
@@ -43,11 +44,13 @@ struct HomeView: View {
                 Spacer()
                 
                 HStack {
-                    NavigationLink(destination: PageView()) {
+                    NavigationLink(destination: HelpView()) {
                         Image(systemName: "questionmark.circle")
                             .resizable()
                             .frame(width: 18.18, height: 18.18)
                     }
+                    
+                    
                     Spacer()
                     
                     // deve chamar o credits
@@ -71,16 +74,19 @@ struct HomeView: View {
         .onAppear {
             hikingManager.requestAuthorization()
             persistence.isFirstTime = "no"
-        }
-    }
-}
-    
-    
-    struct HomeView_Previews: PreviewProvider {
-        static var previews: some View {
-            HomeView()
-                .environmentObject(HikingManager())
-                .environmentObject(Persistence())
             
         }
     }
+}
+
+
+
+
+struct HomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
+            .environmentObject(HikingManager())
+            .environmentObject(Persistence())
+        
+    }
+}

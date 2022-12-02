@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         if persistence.isFirstTime == "yes" {
-            PageView()
+            OnboardingView()
         } else {
             HomeView()
         }
