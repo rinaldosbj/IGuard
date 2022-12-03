@@ -11,7 +11,6 @@ struct EmergencyView: View {
     let perrengues : [Perrengue] = Populate.populateFunc()
     
     var body: some View {
-        NavigationView {
             List{
                 ForEach(perrengues, id: \.self) { perrengue in
                     NavigationLink(destination: InstructionsView(perrengue: perrengue)) {
@@ -19,8 +18,8 @@ struct EmergencyView: View {
                     }
                 }
             }
-            //.navigationTitle("Emergência")
-        }
+            .navigationTitle("Emergência")
+            .navigationBarTitleDisplayMode(.large)
     }
 }
 

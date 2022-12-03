@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1706339829379874008B53AF /* HikingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1706339729379874008B53AF /* HikingManager.swift */; };
+		172C7BBD29394AD10010C470 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172C7BBC29394AD10010C470 /* Persistence.swift */; };
 		172F9ED7293693B8006C78E9 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9ED6293693B8006C78E9 /* CreditsView.swift */; };
 		172F9ED92936AFE6006C78E9 /* EmergencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */; };
 		172F9EDD2936BC07006C78E9 /* InstructionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9EDC2936BC07006C78E9 /* InstructionsRow.swift */; };
 		172F9EDF2936BE6F006C78E9 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9EDE2936BE6F006C78E9 /* InstructionsView.swift */; };
 		1746E6C42939391400C54254 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746E6C32939391400C54254 /* Constants.swift */; };
 		175307242937907300990300 /* HikingSumaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175307232937907300990300 /* HikingSumaryView.swift */; };
+		1756354D293A48E7006CF1D4 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1756354C293A48E7006CF1D4 /* HelpView.swift */; };
 		17844478292D5503008E3DF4 /* StayingAlive Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 17844477292D5503008E3DF4 /* StayingAlive Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1784447D292D5503008E3DF4 /* StayingAliveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784447C292D5503008E3DF4 /* StayingAliveApp.swift */; };
 		1784447F292D5503008E3DF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784447E292D5503008E3DF4 /* ContentView.swift */; };
@@ -23,7 +25,7 @@
 		C050C7522933A6FF00CE8BAB /* Perrengue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7512933A6FF00CE8BAB /* Perrengue.swift */; };
 		C050C7542933A84300CE8BAB /* Model+Populate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7532933A84300CE8BAB /* Model+Populate.swift */; };
 		C050C7562936798000CE8BAB /* Onboarding1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7552936798000CE8BAB /* Onboarding1View.swift */; };
-		C050C7582936876300CE8BAB /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7572936876300CE8BAB /* PageView.swift */; };
+		C050C7582936876300CE8BAB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7572936876300CE8BAB /* OnboardingView.swift */; };
 		C050C75A2936904700CE8BAB /* Onboarding2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7592936904700CE8BAB /* Onboarding2View.swift */; };
 		D3395F792936C9E500E7E20F /* TransitionToHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3395F782936C9E500E7E20F /* TransitionToHomeView.swift */; };
 		D3553B6D2936A20100793043 /* TransitionToMonitorandoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3553B6C2936A20100793043 /* TransitionToMonitorandoView.swift */; };
@@ -60,12 +62,14 @@
 		1706339729379874008B53AF /* HikingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingManager.swift; sourceTree = "<group>"; };
 		1706339B29379D0C008B53AF /* StayingAlive Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "StayingAlive Watch App.entitlements"; sourceTree = "<group>"; };
 		1706339C29379D7A008B53AF /* StayingAlive-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "StayingAlive-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		172C7BBC29394AD10010C470 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		172F9ED6293693B8006C78E9 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		172F9ED82936AFE6006C78E9 /* EmergencyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyRow.swift; sourceTree = "<group>"; };
 		172F9EDC2936BC07006C78E9 /* InstructionsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsRow.swift; sourceTree = "<group>"; };
 		172F9EDE2936BE6F006C78E9 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		1746E6C32939391400C54254 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		175307232937907300990300 /* HikingSumaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingSumaryView.swift; sourceTree = "<group>"; };
+		1756354C293A48E7006CF1D4 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		17844471292D5503008E3DF4 /* StayingAlive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayingAlive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17844477292D5503008E3DF4 /* StayingAlive Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StayingAlive Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1784447C292D5503008E3DF4 /* StayingAliveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayingAliveApp.swift; sourceTree = "<group>"; };
@@ -76,7 +80,7 @@
 		C050C7512933A6FF00CE8BAB /* Perrengue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perrengue.swift; sourceTree = "<group>"; };
 		C050C7532933A84300CE8BAB /* Model+Populate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Populate.swift"; sourceTree = "<group>"; };
 		C050C7552936798000CE8BAB /* Onboarding1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1View.swift; sourceTree = "<group>"; };
-		C050C7572936876300CE8BAB /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		C050C7572936876300CE8BAB /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		C050C7592936904700CE8BAB /* Onboarding2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2View.swift; sourceTree = "<group>"; };
 		D3395F782936C9E500E7E20F /* TransitionToHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionToHomeView.swift; sourceTree = "<group>"; };
 		D3553B6C2936A20100793043 /* TransitionToMonitorandoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionToMonitorandoView.swift; sourceTree = "<group>"; };
@@ -117,6 +121,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		172C7BBB29394ABB0010C470 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1706339729379874008B53AF /* HikingManager.swift */,
+				172C7BBC29394AD10010C470 /* Persistence.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		172F9EE02936BE75006C78E9 /* Instructions */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +142,8 @@
 		1746E6C02939272000C54254 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				C050C7572936876300CE8BAB /* PageView.swift */,
+				C050C7572936876300CE8BAB /* OnboardingView.swift */,
+				1756354C293A48E7006CF1D4 /* HelpView.swift */,
 				C050C7552936798000CE8BAB /* Onboarding1View.swift */,
 				C050C7592936904700CE8BAB /* Onboarding2View.swift */,
 				D3EAB71B293688EC007A9D29 /* Onboarding3View.swift */,
@@ -181,7 +195,7 @@
 				1706339B29379D0C008B53AF /* StayingAlive Watch App.entitlements */,
 				1784447C292D5503008E3DF4 /* StayingAliveApp.swift */,
 				1784447E292D5503008E3DF4 /* ContentView.swift */,
-				1706339729379874008B53AF /* HikingManager.swift */,
+				172C7BBB29394ABB0010C470 /* Controllers */,
 				171D9FFF2936DE280093AE6C /* View */,
 				C050C7502933A5F800CE8BAB /* Models */,
 				17844480292D5504008E3DF4 /* Assets.xcassets */,
@@ -309,12 +323,14 @@
 				17F5813C29367B3300734A61 /* HomeView.swift in Sources */,
 				172F9EDF2936BE6F006C78E9 /* InstructionsView.swift in Sources */,
 				D3395F792936C9E500E7E20F /* TransitionToHomeView.swift in Sources */,
+				172C7BBD29394AD10010C470 /* Persistence.swift in Sources */,
 				D3D3603329369DF400A74DD6 /* HikingView.swift in Sources */,
+				1756354D293A48E7006CF1D4 /* HelpView.swift in Sources */,
 				172F9EDD2936BC07006C78E9 /* InstructionsRow.swift in Sources */,
 				172F9ED92936AFE6006C78E9 /* EmergencyRow.swift in Sources */,
 				C050C7522933A6FF00CE8BAB /* Perrengue.swift in Sources */,
 				175307242937907300990300 /* HikingSumaryView.swift in Sources */,
-				C050C7582936876300CE8BAB /* PageView.swift in Sources */,
+				C050C7582936876300CE8BAB /* OnboardingView.swift in Sources */,
 				C050C7542933A84300CE8BAB /* Model+Populate.swift in Sources */,
 				172F9ED7293693B8006C78E9 /* CreditsView.swift in Sources */,
 				D3EAB71C293688EC007A9D29 /* Onboarding3View.swift in Sources */,

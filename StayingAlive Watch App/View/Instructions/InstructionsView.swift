@@ -14,7 +14,6 @@ struct InstructionsView: View {
     }
     
     var body: some View {
-        
         List {
             ForEach(instructions, id: \.self) { instruction in
                 InstructionsRow(InstructionString: instruction)
@@ -25,7 +24,8 @@ struct InstructionsView: View {
                 .padding()
         }
         .listStyle(.elliptical)
-        //.navigationTitle(perrengue.name)
+        .navigationTitle(perrengue.name)
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 
