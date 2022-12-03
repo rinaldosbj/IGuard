@@ -44,7 +44,7 @@ struct Onboarding3View: View {
                     .animation(.easeInOut(duration: 2)
                         .repeatForever(autoreverses: true))
 
-                Color(.blue)
+                Color(Constants.TurquoiseColor)
                     .cornerRadius(10)
                     .frame(height: 30)
                     .padding(.horizontal,10)

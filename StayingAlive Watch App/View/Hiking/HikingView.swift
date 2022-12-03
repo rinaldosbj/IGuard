@@ -8,70 +8,58 @@
 import SwiftUI
 
 struct MonitandoView: View {
-    @State private var shouldShowEmergency: Bool = false
-    @State private var shouldShow: Bool = false
+    @StateObject var hikingManager = HikingManager()
+    @State var buttonName: String = "Pausar"
+    @State var isMonitoring: Bool = true
+    @State var shouldShow = false
     
     var body: some View {
-        NavigationView {
-            VStack {
-                VStack(spacing: 10) {
-                    NavigationLink(destination: EmergencyView()) {
-                        Text("Emergência")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                    } .background(Color(.blue))
-                        .cornerRadius(15)
-                }
-                
+        ZStack{
+            NavigationLink("", destination: HikingSumaryView().environmentObject(hikingManager).navigationBarBackButtonHidden(true) ,isActive: $shouldShow).buttonStyle(.borderless)
+            
+            VStack(spacing: 10) {
                 HStack{
-                    NavigationLink(destination: {HomeView()}) {
-                        Text("Parar")
-                            .foregroundColor(.black)
-                    } .background(Color(Constants.TurquoiseColor))
-                        .cornerRadius(15)
-                    Text("0:50")
-                        .padding(.horizontal,24)
-                    
-                }
-                
-                ZStack{
-                    RoundedRectangle(cornerRadius: 8, style: .continuous)
-                    HStack{
-                        RoundedRectangle(cornerRadius: 8, style: .continuous)
-                            .frame(width: 30)
-                            .foregroundColor(Color(Constants.TurquoiseColor))
+                    Text("Monitorando")
+                        .layoutPriority(1000)
+                    if isMonitoring {
+                        ProgressView()
+                            .foregroundColor((Color(Constants.TurquoiseColor)))
+                            .frame(height: 20)
+                    } else {
+                        Spacer()
+                        Image(systemName: "pause.fill")
                         Spacer()
                     }
-                }.padding(.bottom,8)
+                }
+                
+                NavigationLink(destination: EmergencyView()) {
+                    Text("Emergência")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                } .background(Color(Constants.TurquoiseColor))
+                    .cornerRadius(15)
+                
+                HStack{
+                    Button("Parar", action: {
+                        hikingManager.endWorkout()
+                        shouldShow.toggle()
+                        
+                    })
+                    Button(buttonName, action: {
+                        if buttonName == "Pausar"{
+                            buttonName = "Seguir"
+                            hikingManager.togglePause()
+                        } else {
+                            buttonName = "Pausar"
+                            hikingManager.togglePause()
+                        }
+                        isMonitoring.toggle()
+                    }).buttonStyle(.borderedProminent)
+                }
+            }.onAppear(){
+                hikingManager.startWorkout(workoutType: .hiking)
             }
-            
-            Spacer()
-            
-            HStack {
-                Button(action: {
-                    print("Clicou em mim")
-                }) {
-                    Image(systemName: "exclamationmark.circle")
-                        .resizable()
-                        .frame(width: 18.18, height: 18.18)
-                }
-                
-                Spacer()
-                
-                Button(action: {
-                    print("Clicou em mim")
-                }) {
-                    Image(systemName: "c.circle")
-                        .resizable()
-                        .frame(width: 18.18, height: 18.18)
-                }
-                
-                
-            }.buttonStyle(.borderless)
-            
         }
-        .padding(.top, 19)
-        .padding(.bottom, -12)
     }
 }
 
