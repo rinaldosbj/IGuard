@@ -37,19 +37,14 @@ struct InstructionsBottomView : View {
             .font(.footnote)
             .multilineTextAlignment(.leading)
             .italic()
-            
-        
-        Button(action: {
-            print("Clicou em mim")
-        }, label: {
+
+        NavigationLink(destination: EmergencyView()) {
             Text("Entendi")
                 .font(.headline)
                 .foregroundColor(.accentColor)
                 .frame(maxWidth: .infinity, alignment: .center)
-                
-                
-        })
-    
+        }
+        
     }
 }
 

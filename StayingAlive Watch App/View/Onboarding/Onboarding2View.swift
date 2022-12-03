@@ -13,7 +13,7 @@ struct Onboarding2View: View {
     
     var body: some View {
         VStack (alignment: .center) {
-            Text("\(Text("IGuard").bold()) é um aplicativo que combina instruções de primeiros socorros com monitoramento ativo das suas funções vitais")
+            Text("\(Text("iGuard").bold()) é um aplicativo que combina instruções de primeiros socorros com monitoramento ativo das suas funções vitais")
                 .frame(width: 170, height: 138)
                 .multilineTextAlignment(.center)
                 .offset(y: 7)
