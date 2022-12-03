@@ -98,9 +98,12 @@ class HikingManager : NSObject, ObservableObject {
     func endWorkout() {
         session?.end()
         showingSummaryView = true
+        duration = Date().timeIntervalSince(startTime)
     }
 
     // MARK: - Workout Metrics
+    @Published var startTime : Date = Date()
+    @Published var duration : Double = 0
     @Published var averageHeartRate: Double = 0
     @Published var heartRate: Double = 0
     @Published var activeEnergy: Double = 0

@@ -9,29 +9,46 @@ import SwiftUI
 
 struct HikingSumaryView: View {
     
+    @EnvironmentObject var hikingManager: HikingManager
+    
+    var durationFormated: String {
+        "\(Int((hikingManager.duration)/3600)):\(Int((hikingManager.duration))%3600):\((Int((hikingManager.duration))%3600)%60)"
+    }
+    
+    var totalDistance: String {
+        "\(hikingManager.distance) km"
+    }
+    
+    var calories: String {
+        "\(hikingManager.activeEnergy)"
+    }
+    
+    var heartRate: String {
+        "\(Int(hikingManager.averageHeartRate)) BPM"
+    }
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 7) {
                 SumaryInfo(infoTittle: "Tempo de Atividade",
-                           info: "00:00:00")
+                           info: durationFormated)
                 
                 Divider()
                 
                 SumaryInfo(infoTittle: "Distância Total",
-                           info: "5.43 km")
+                           info: totalDistance)
                 
                 Divider()
                 
                 SumaryInfo(infoTittle: "Calorias",
-                           info: "241")
+                           info: calories)
                 
                 Divider()
                 
-                SumaryInfo(infoTittle: "Batimento Card. Médio", info: "120 BPM")
+                SumaryInfo(infoTittle: "Batimento Card. Médio", info: heartRate)
                 
                 Button(action: {
-                    print("Clicou em mim")}) {
+                    }) {
                         Text("Fechar")
                             .foregroundColor(Color(Constants.TurquoiseColor))
                     }
@@ -58,7 +75,9 @@ struct SumaryInfo : View {
 }
 
 struct HikingSumaryView_Previews: PreviewProvider {
+    static var hikingManager = HikingManager()
     static var previews: some View {
         HikingSumaryView()
+            .environmentObject(hikingManager)
     }
 }
