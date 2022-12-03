@@ -15,7 +15,7 @@ struct Onboarding1View: View {
         VStack (alignment: .center) {
             Text("Bem vindo ao ")
 //                .offset(y: -5)
-            Text("IGuard!")
+            Text("iGuard!")
 //                .offset(y: -5)
                 .bold()
             

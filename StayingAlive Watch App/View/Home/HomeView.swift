@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @StateObject private var hikingManager = HikingManager()
     @EnvironmentObject var persistence : Persistence
-    @State var showingUnboarding = false
+    @State var showingOnboarding = false
     
     var body: some View {
         NavigationView {
@@ -66,7 +66,7 @@ struct HomeView: View {
             .padding(.top, 19)
             .padding(.bottom)
             .padding(.horizontal)
-            .navigationTitle("IGuard")
+            .navigationTitle("iGuard")
             .navigationBarTitleDisplayMode(.inline)
         }
         .onAppear {
