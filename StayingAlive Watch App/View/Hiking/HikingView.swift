@@ -36,7 +36,7 @@ struct MonitandoView: View {
                     Text("Emergência")
                         .font(.headline)
                         .foregroundColor(.white)
-                } .background(Color(.blue))
+                } .background(Color(Constants.TurquoiseColor))
                     .cornerRadius(15)
                 
                 HStack{
