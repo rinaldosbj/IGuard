@@ -54,9 +54,7 @@ struct HomeView: View {
                     Spacer()
                     
                     // deve chamar o credits
-                    Button(action: {
-                        print("Clicou em mim")
-                    }) {
+                    NavigationLink(destination: CreditsView()) {
                         Image(systemName: "c.circle")
                             .resizable()
                             .frame(width: 18.18, height: 18.18)
