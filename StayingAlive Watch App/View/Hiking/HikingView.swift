@@ -12,66 +12,38 @@ struct MonitandoView: View {
     @State private var shouldShow: Bool = false
     
     var body: some View {
-        NavigationView {
-            VStack {
-                VStack(spacing: 10) {
-                    NavigationLink(destination: EmergencyView()) {
-                        Text("Emergência")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                    } .background(Color(.blue))
-                        .cornerRadius(15)
-                }
-                
-                HStack{
-                    NavigationLink(destination: {HomeView()}) {
-                        Text("Parar")
-                            .foregroundColor(.black)
-                    } .background(Color(Constants.TurquoiseColor))
-                        .cornerRadius(15)
-                    Text("0:50")
-                        .padding(.horizontal,24)
-                    
-                }
-                
-                ZStack{
-                    RoundedRectangle(cornerRadius: 8, style: .continuous)
-                    HStack{
-                        RoundedRectangle(cornerRadius: 8, style: .continuous)
-                            .frame(width: 30)
-                            .foregroundColor(Color(Constants.TurquoiseColor))
-                        Spacer()
-                    }
-                }.padding(.bottom,8)
+        VStack {
+            VStack(spacing: 10) {
+                NavigationLink(destination: EmergencyView()) {
+                    Text("Emergência")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                } .background(Color(.blue))
+                    .cornerRadius(15)
             }
             
-            Spacer()
+            HStack{
+                NavigationLink(destination: {HomeView()}) {
+                    Text("Parar")
+                        .foregroundColor(.black)
+                } .background(Color(Constants.TurquoiseColor))
+                    .cornerRadius(15)
+                Text("0:50")
+                    .padding(.horizontal,24)
+                
+            }
             
-            HStack {
-                Button(action: {
-                    print("Clicou em mim")
-                }) {
-                    Image(systemName: "exclamationmark.circle")
-                        .resizable()
-                        .frame(width: 18.18, height: 18.18)
+            ZStack{
+                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                HStack{
+                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+                        .frame(width: 30)
+                        .foregroundColor(Color(Constants.TurquoiseColor))
+                    Spacer()
                 }
-                
-                Spacer()
-                
-                Button(action: {
-                    print("Clicou em mim")
-                }) {
-                    Image(systemName: "c.circle")
-                        .resizable()
-                        .frame(width: 18.18, height: 18.18)
-                }
-                
-                
-            }.buttonStyle(.borderless)
-            
+            }.padding(.bottom,8)
         }
-        .padding(.top, 19)
-        .padding(.bottom, -12)
+        Spacer()
     }
 }
 
