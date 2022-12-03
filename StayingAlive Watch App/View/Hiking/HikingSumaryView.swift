@@ -12,7 +12,7 @@ struct HikingSumaryView: View {
     @EnvironmentObject var hikingManager: HikingManager
     
     var durationFormated: String {
-        "\(Int((hikingManager.duration)/3600)):\(Int((hikingManager.duration))%3600):\((Int((hikingManager.duration))%3600)%60)"
+        "\(Int((hikingManager.duration)/3600)):\(Int((hikingManager.duration)/60)%3600):\((Int((hikingManager.duration))%3600)%60)"
     }
     
     var totalDistance: String {
@@ -30,7 +30,7 @@ struct HikingSumaryView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 7) {
-                SumaryInfo(infoTittle: "Tempo de Atividade",
+                SumaryInfo(infoTittle: "Tempo Total de Atividade",
                            info: durationFormated)
                 
                 Divider()
@@ -47,11 +47,8 @@ struct HikingSumaryView: View {
                 
                 SumaryInfo(infoTittle: "Batimento Card. Médio", info: heartRate)
                 
-                Button(action: {
-                    }) {
-                        Text("Fechar")
-                            .foregroundColor(Color(Constants.TurquoiseColor))
-                    }
+                NavigationLink("Fechar", destination: HomeView().navigationBarBackButtonHidden(true))
+                    .foregroundColor(Color(Constants.TurquoiseColor))
             }
             .padding()
             

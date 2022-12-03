@@ -8,42 +8,58 @@
 import SwiftUI
 
 struct MonitandoView: View {
-    @State private var shouldShowEmergency: Bool = false
-    @State private var shouldShow: Bool = false
+    @StateObject var hikingManager = HikingManager()
+    @State var buttonName: String = "Pausar"
+    @State var isMonitoring: Bool = true
+    @State var shouldShow = false
     
     var body: some View {
-        VStack {
+        ZStack{
+            NavigationLink("", destination: HikingSumaryView().environmentObject(hikingManager).navigationBarBackButtonHidden(true) ,isActive: $shouldShow).buttonStyle(.borderless)
+            
             VStack(spacing: 10) {
+                HStack{
+                    Text("Monitorando")
+                        .layoutPriority(1000)
+                    if isMonitoring {
+                        ProgressView()
+                            .foregroundColor((Color(Constants.TurquoiseColor)))
+                            .frame(height: 20)
+                    } else {
+                        Spacer()
+                        Image(systemName: "pause.fill")
+                        Spacer()
+                    }
+                }
+                
                 NavigationLink(destination: EmergencyView()) {
                     Text("Emergência")
                         .font(.headline)
                         .foregroundColor(.white)
                 } .background(Color(.blue))
                     .cornerRadius(15)
-            }
-            
-            HStack{
-                NavigationLink(destination: {HomeView()}) {
-                    Text("Parar")
-                        .foregroundColor(.black)
-                } .background(Color(Constants.TurquoiseColor))
-                    .cornerRadius(15)
-                Text("0:50")
-                    .padding(.horizontal,24)
                 
-            }
-            
-            ZStack{
-                RoundedRectangle(cornerRadius: 8, style: .continuous)
                 HStack{
-                    RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        .frame(width: 30)
-                        .foregroundColor(Color(Constants.TurquoiseColor))
-                    Spacer()
+                    Button("Parar", action: {
+                        hikingManager.endWorkout()
+                        shouldShow.toggle()
+                        
+                    })
+                    Button(buttonName, action: {
+                        if buttonName == "Pausar"{
+                            buttonName = "Seguir"
+                            hikingManager.togglePause()
+                        } else {
+                            buttonName = "Pausar"
+                            hikingManager.togglePause()
+                        }
+                        isMonitoring.toggle()
+                    }).buttonStyle(.borderedProminent)
                 }
-            }.padding(.bottom,8)
+            }.onAppear(){
+                hikingManager.startWorkout(workoutType: .hiking)
+            }
         }
-        Spacer()
     }
 }
 
