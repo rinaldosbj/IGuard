@@ -18,13 +18,14 @@ struct CreditsView: View {
     var body: some View {
         VStack {
             HStack {
+                Spacer()
                 Image(systemName: "apple.logo")
                     .resizable()
                     .frame(width: 20, height: 25)
                     .foregroundColor(.accentColor)
-                Text(
-                    "Apple Developer Academy - Recife"
-                )
+                Spacer()
+                Text("Apple Developer Academy - Recife")
+                Spacer()
             }
             Spacer()
             

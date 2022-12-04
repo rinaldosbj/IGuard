@@ -31,7 +31,7 @@ struct Onboarding1View: View {
                     .offset(x: -5, y: -25)
                     .rotationEffect (Angle (degrees:
                     self.isAnimated ? 4 : -4), anchor: .center)
-                    .animation(Animation.linear(duration: 1.5).repeatForever(), value: isAnimated)
+                    .animation(Animation.linear(duration: 0.8).repeatForever(), value: isAnimated)
                 
                 Image("braco")
                     .resizable()
