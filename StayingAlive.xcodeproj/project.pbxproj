@@ -21,6 +21,8 @@
 		1784447F292D5503008E3DF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784447E292D5503008E3DF4 /* ContentView.swift */; };
 		17844481292D5504008E3DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17844480292D5504008E3DF4 /* Assets.xcassets */; };
 		17844484292D5504008E3DF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17844483292D5504008E3DF4 /* Preview Assets.xcassets */; };
+		17B75F10293E9E96008E55F6 /* MonitoringOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B75F0F293E9E96008E55F6 /* MonitoringOptions.swift */; };
+		17B75F12293EB131008E55F6 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B75F11293EB131008E55F6 /* Activity.swift */; };
 		17F5813C29367B3300734A61 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5813B29367B3300734A61 /* HomeView.swift */; };
 		C050C7522933A6FF00CE8BAB /* Perrengue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7512933A6FF00CE8BAB /* Perrengue.swift */; };
 		C050C7542933A84300CE8BAB /* Model+Populate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7532933A84300CE8BAB /* Model+Populate.swift */; };
@@ -76,6 +78,8 @@
 		1784447E292D5503008E3DF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17844480292D5504008E3DF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17844483292D5504008E3DF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17B75F0F293E9E96008E55F6 /* MonitoringOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringOptions.swift; sourceTree = "<group>"; };
+		17B75F11293EB131008E55F6 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		17F5813B29367B3300734A61 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C050C7512933A6FF00CE8BAB /* Perrengue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perrengue.swift; sourceTree = "<group>"; };
 		C050C7532933A84300CE8BAB /* Model+Populate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Populate.swift"; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				D3D3603229369DF400A74DD6 /* HikingView.swift */,
+				17B75F0F293E9E96008E55F6 /* MonitoringOptions.swift */,
 				175307232937907300990300 /* HikingSumaryView.swift */,
 				D3553B6C2936A20100793043 /* TransitionToMonitorandoView.swift */,
 			);
@@ -218,6 +223,7 @@
 				C050C7512933A6FF00CE8BAB /* Perrengue.swift */,
 				C050C7532933A84300CE8BAB /* Model+Populate.swift */,
 				1746E6C32939391400C54254 /* Constants.swift */,
+				17B75F11293EB131008E55F6 /* Activity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 				172C7BBD29394AD10010C470 /* Persistence.swift in Sources */,
 				D3D3603329369DF400A74DD6 /* HikingView.swift in Sources */,
 				1756354D293A48E7006CF1D4 /* HelpView.swift in Sources */,
+				17B75F12293EB131008E55F6 /* Activity.swift in Sources */,
 				172F9EDD2936BC07006C78E9 /* InstructionsRow.swift in Sources */,
 				172F9ED92936AFE6006C78E9 /* EmergencyRow.swift in Sources */,
 				C050C7522933A6FF00CE8BAB /* Perrengue.swift in Sources */,
@@ -342,6 +349,7 @@
 				1784447D292D5503008E3DF4 /* StayingAliveApp.swift in Sources */,
 				C050C7562936798000CE8BAB /* Onboarding1View.swift in Sources */,
 				C050C75A2936904700CE8BAB /* Onboarding2View.swift in Sources */,
+				17B75F10293E9E96008E55F6 /* MonitoringOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

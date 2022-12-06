@@ -49,7 +49,7 @@ struct InstructionsBottomView : View {
 }
 
 struct InstructionsView_Previews: PreviewProvider {
-    static var perrengues = Populate.populateFunc()
+    static var perrengues = Populate.getPerrengues()
     
     static var previews: some View {
         InstructionsView(perrengue: perrengues[0])
