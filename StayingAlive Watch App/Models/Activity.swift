@@ -9,13 +9,13 @@ import Foundation
 import SwiftUI
 import HealthKit
 
-struct Activity {
+struct Activity : Hashable {
     var name : Workout
     let imageString : String
     let workoutType : HKWorkoutActivityType
     
-    var image : Image? {
-        Image(imageString)
+    var image : Image {
+        Image(systemName: imageString)
     }
     
     enum Workout : String {

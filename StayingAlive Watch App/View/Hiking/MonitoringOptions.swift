@@ -11,12 +11,27 @@ import HealthKit
 struct MonitoringOptions: View {
     @EnvironmentObject var hikingManager : HikingManager
     
-    let activitiesTypes : [HKWorkoutActivityType] = [.hiking, .running, .walking]
-    
-    
+    let activities : [Activity] = Populate.getActivities()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(activities, id: \.self) { activity in
+            Button(action: {
+                hikingManager.selectedWorkout = activity.workoutType
+            }) {
+                HStack{
+                    Text(activity.name.rawValue)
+                        .font(.headline)
+                        .foregroundColor(.accentColor)
+                    Spacer()
+                    activity.image
+                        .resizable()
+                        .frame(width: 25, height: 20)
+                        .padding(.trailing)
+                        .foregroundColor(.accentColor)
+                }
+            }
+            .navigationTitle("Atividade")
+        }
     }
 }
 
