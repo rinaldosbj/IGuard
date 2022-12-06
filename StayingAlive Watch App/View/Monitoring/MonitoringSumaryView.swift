@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HikingSumaryView: View {
+struct MonitoringSumaryView: View {
     
     @EnvironmentObject var hikingManager: HikingManager
     
@@ -47,11 +47,18 @@ struct HikingSumaryView: View {
                 
                 SumaryInfo(infoTittle: "Batimento Card. Médio", info: heartRate)
                 
-                NavigationLink("Fechar", destination: HomeView().navigationBarBackButtonHidden(true))
+                NavigationLink("Fechar", destination: HomeView()
+                    .navigationBarBackButtonHidden(true)
+                    .navigationBarTitleDisplayMode(.inline))
                     .foregroundColor(Color(Constants.TurquoiseColor))
             }
             .padding()
+            .navigationTitle("Sumário")
+            .navigationBarBackButtonHidden()
             
+        }
+        .onAppear {
+            hikingManager.endWorkout()
         }
     }
 }
@@ -74,7 +81,7 @@ struct SumaryInfo : View {
 struct HikingSumaryView_Previews: PreviewProvider {
     static var hikingManager = HikingManager()
     static var previews: some View {
-        HikingSumaryView()
+        MonitoringSumaryView()
             .environmentObject(hikingManager)
     }
 }

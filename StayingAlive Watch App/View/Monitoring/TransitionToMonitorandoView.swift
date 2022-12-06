@@ -11,7 +11,7 @@ struct TransitionView: View {
     @State private var shouldShow: Bool = false
     var body: some View {
         ZStack{
-            NavigationLink("", destination: MonitandoView().navigationBarBackButtonHidden(true) ,isActive: $shouldShow).buttonStyle(.borderless)
+            NavigationLink("", destination: MonitoringView(workoutType: .hiking).navigationBarBackButtonHidden(true) ,isActive: $shouldShow).buttonStyle(.borderless)
             
             VStack (alignment: .center) {
                 HStack (alignment: .center) {

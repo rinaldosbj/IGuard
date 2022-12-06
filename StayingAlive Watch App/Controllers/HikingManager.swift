@@ -10,13 +10,12 @@ import HealthKit
 
 class HikingManager : NSObject, ObservableObject {
     
-    var selectedWorkout : HKWorkoutActivityType?
-//    {
-//        didSet {
-//            guard let selectedWorkout = selectedWorkout else { return }
-//            startWorkout(workoutType: selectedWorkout)
-//        }
-//    }
+    var selectedWorkout : HKWorkoutActivityType? {
+        didSet {
+            guard let selectedWorkout = selectedWorkout else { return }
+            startWorkout(workoutType: selectedWorkout)
+        }
+    }
     
     @Published var showingSummaryView: Bool = false {
         didSet {
