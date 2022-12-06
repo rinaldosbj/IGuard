@@ -28,6 +28,7 @@ struct Activity {
         case skate = "Skate"
         case sailing = "Velejar"
         case swiming = "Nado"
-        case tennis = "Tennis"
+        case surf = "Surf"
+        case paddleSportrs = "Esportes com remo"
     }
 }
