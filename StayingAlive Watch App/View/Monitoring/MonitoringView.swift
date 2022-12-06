@@ -23,11 +23,15 @@ struct MonitoringView: View {
     var body: some View {
         VStack(spacing: 15) {
                 HStack{
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    
                     Text("Monitorando")
                         .layoutPriority(1000)
+                        .font(.headline)
+
                     
-                    Spacer(
-                    )
                     if isMonitoring {
                         ProgressView()
                             .foregroundColor((Color(Constants.TurquoiseColor)))
@@ -61,6 +65,7 @@ struct MonitoringView: View {
                         }
                         isMonitoring.toggle()
                     }).buttonStyle(.borderedProminent)
+
                 }
             }
         .navigationBarBackButtonHidden()

@@ -38,7 +38,7 @@ class Populate {
                      workoutType: .play),
             
             Activity(name: .skate,
-                     imageString: "figure.rugby",
+                     imageString: "figure.skating",
                      workoutType: .skatingSports),
             
             Activity(name: .sailing,

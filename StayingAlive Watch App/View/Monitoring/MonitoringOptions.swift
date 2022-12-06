@@ -23,8 +23,6 @@ struct MonitoringOptions: View {
                         .foregroundColor(.accentColor)
                     Spacer()
                     activity.image
-                        .resizable()
-                        .frame(width: 25, height: 20)
                         .padding(.trailing)
                         .foregroundColor(.accentColor)
                     
@@ -37,7 +35,9 @@ struct MonitoringOptions: View {
 }
 
 struct MonitoringOptions_Previews: PreviewProvider {
+    static var hikingManager = HikingManager()
     static var previews: some View {
         MonitoringOptions()
+            .environmentObject(hikingManager)
     }
 }
