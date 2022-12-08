@@ -6,21 +6,32 @@
 //
 
 import SwiftUI
+import HealthKit
 
-struct MonitandoView: View {
-    @StateObject var hikingManager = HikingManager()
+struct MonitoringView: View {
+    @EnvironmentObject var hikingManager : HikingManager
+    
+    var workoutType : HKWorkoutActivityType {
+        didSet{
+            hikingManager.selectedWorkout = workoutType
+        }
+    }
+    
     @State var buttonName: String = "Pausar"
     @State var isMonitoring: Bool = true
-    @State var shouldShow = false
     
     var body: some View {
-        ZStack{
-            NavigationLink("", destination: HikingSumaryView().environmentObject(hikingManager).navigationBarBackButtonHidden(true) ,isActive: $shouldShow).buttonStyle(.borderless)
-            
-            VStack(spacing: 10) {
+        VStack(spacing: 15) {
                 HStack{
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    
                     Text("Monitorando")
                         .layoutPriority(1000)
+                        .font(.headline)
+
+                    
                     if isMonitoring {
                         ProgressView()
                             .foregroundColor((Color(Constants.TurquoiseColor)))
@@ -30,7 +41,7 @@ struct MonitandoView: View {
                         Image(systemName: "pause.fill")
                         Spacer()
                     }
-                }
+                }.padding(.horizontal, 16)
                 
                 NavigationLink(destination: EmergencyView()) {
                     Text("Emergência")
@@ -40,11 +51,10 @@ struct MonitandoView: View {
                     .cornerRadius(15)
                 
                 HStack{
-                    Button("Parar", action: {
-                        hikingManager.endWorkout()
-                        shouldShow.toggle()
-                        
-                    })
+                    NavigationLink(destination: MonitoringSumaryView().environmentObject(hikingManager)) {
+                        Text("Parar")
+                    }
+                    
                     Button(buttonName, action: {
                         if buttonName == "Pausar"{
                             buttonName = "Seguir"
@@ -55,17 +65,19 @@ struct MonitandoView: View {
                         }
                         isMonitoring.toggle()
                     }).buttonStyle(.borderedProminent)
+
                 }
-            }.onAppear(){
-                hikingManager.startWorkout(workoutType: .hiking)
             }
+        .navigationBarBackButtonHidden()
         }
     }
-}
+ 
 
 
 struct MonitandoView_Previews: PreviewProvider {
+    static var hikingManager = HikingManager()
     static var previews: some View {
-        MonitandoView()
+        MonitoringView(workoutType: .hiking)
+            .environmentObject(hikingManager)
     }
 }

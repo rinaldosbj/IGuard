@@ -14,13 +14,15 @@
 		172F9EDD2936BC07006C78E9 /* InstructionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9EDC2936BC07006C78E9 /* InstructionsRow.swift */; };
 		172F9EDF2936BE6F006C78E9 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F9EDE2936BE6F006C78E9 /* InstructionsView.swift */; };
 		1746E6C42939391400C54254 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1746E6C32939391400C54254 /* Constants.swift */; };
-		175307242937907300990300 /* HikingSumaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175307232937907300990300 /* HikingSumaryView.swift */; };
+		175307242937907300990300 /* MonitoringSumaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175307232937907300990300 /* MonitoringSumaryView.swift */; };
 		1756354D293A48E7006CF1D4 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1756354C293A48E7006CF1D4 /* HelpView.swift */; };
 		17844478292D5503008E3DF4 /* StayingAlive Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 17844477292D5503008E3DF4 /* StayingAlive Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1784447D292D5503008E3DF4 /* StayingAliveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784447C292D5503008E3DF4 /* StayingAliveApp.swift */; };
 		1784447F292D5503008E3DF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1784447E292D5503008E3DF4 /* ContentView.swift */; };
 		17844481292D5504008E3DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17844480292D5504008E3DF4 /* Assets.xcassets */; };
 		17844484292D5504008E3DF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17844483292D5504008E3DF4 /* Preview Assets.xcassets */; };
+		17B75F10293E9E96008E55F6 /* MonitoringOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B75F0F293E9E96008E55F6 /* MonitoringOptions.swift */; };
+		17B75F12293EB131008E55F6 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B75F11293EB131008E55F6 /* Activity.swift */; };
 		17F5813C29367B3300734A61 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5813B29367B3300734A61 /* HomeView.swift */; };
 		C050C7522933A6FF00CE8BAB /* Perrengue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7512933A6FF00CE8BAB /* Perrengue.swift */; };
 		C050C7542933A84300CE8BAB /* Model+Populate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C050C7532933A84300CE8BAB /* Model+Populate.swift */; };
@@ -30,7 +32,7 @@
 		D3395F792936C9E500E7E20F /* TransitionToHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3395F782936C9E500E7E20F /* TransitionToHomeView.swift */; };
 		D3553B6D2936A20100793043 /* TransitionToMonitorandoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3553B6C2936A20100793043 /* TransitionToMonitorandoView.swift */; };
 		D3553B6F2936A61C00793043 /* EmergencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3553B6E2936A61C00793043 /* EmergencyView.swift */; };
-		D3D3603329369DF400A74DD6 /* HikingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3603229369DF400A74DD6 /* HikingView.swift */; };
+		D3D3603329369DF400A74DD6 /* MonitoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D3603229369DF400A74DD6 /* MonitoringView.swift */; };
 		D3EAB71C293688EC007A9D29 /* Onboarding3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EAB71B293688EC007A9D29 /* Onboarding3View.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +70,7 @@
 		172F9EDC2936BC07006C78E9 /* InstructionsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsRow.swift; sourceTree = "<group>"; };
 		172F9EDE2936BE6F006C78E9 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 		1746E6C32939391400C54254 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		175307232937907300990300 /* HikingSumaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingSumaryView.swift; sourceTree = "<group>"; };
+		175307232937907300990300 /* MonitoringSumaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringSumaryView.swift; sourceTree = "<group>"; };
 		1756354C293A48E7006CF1D4 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		17844471292D5503008E3DF4 /* StayingAlive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayingAlive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17844477292D5503008E3DF4 /* StayingAlive Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StayingAlive Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,8 @@
 		1784447E292D5503008E3DF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17844480292D5504008E3DF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17844483292D5504008E3DF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17B75F0F293E9E96008E55F6 /* MonitoringOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringOptions.swift; sourceTree = "<group>"; };
+		17B75F11293EB131008E55F6 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		17F5813B29367B3300734A61 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C050C7512933A6FF00CE8BAB /* Perrengue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perrengue.swift; sourceTree = "<group>"; };
 		C050C7532933A84300CE8BAB /* Model+Populate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Populate.swift"; sourceTree = "<group>"; };
@@ -85,7 +89,7 @@
 		D3395F782936C9E500E7E20F /* TransitionToHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionToHomeView.swift; sourceTree = "<group>"; };
 		D3553B6C2936A20100793043 /* TransitionToMonitorandoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionToMonitorandoView.swift; sourceTree = "<group>"; };
 		D3553B6E2936A61C00793043 /* EmergencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyView.swift; sourceTree = "<group>"; };
-		D3D3603229369DF400A74DD6 /* HikingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingView.swift; sourceTree = "<group>"; };
+		D3D3603229369DF400A74DD6 /* MonitoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringView.swift; sourceTree = "<group>"; };
 		D3EAB71B293688EC007A9D29 /* Onboarding3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +116,7 @@
 		171D9FFF2936DE280093AE6C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1746E6C22939279B00C54254 /* Hiking */,
+				1746E6C22939279B00C54254 /* Monitoring */,
 				1746E6C12939278D00C54254 /* Home */,
 				1746E6C02939272000C54254 /* Onboarding */,
 				171D9FFE2936D86C0093AE6C /* Emergency */,
@@ -161,14 +165,15 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		1746E6C22939279B00C54254 /* Hiking */ = {
+		1746E6C22939279B00C54254 /* Monitoring */ = {
 			isa = PBXGroup;
 			children = (
-				D3D3603229369DF400A74DD6 /* HikingView.swift */,
-				175307232937907300990300 /* HikingSumaryView.swift */,
+				D3D3603229369DF400A74DD6 /* MonitoringView.swift */,
+				17B75F0F293E9E96008E55F6 /* MonitoringOptions.swift */,
+				175307232937907300990300 /* MonitoringSumaryView.swift */,
 				D3553B6C2936A20100793043 /* TransitionToMonitorandoView.swift */,
 			);
-			path = Hiking;
+			path = Monitoring;
 			sourceTree = "<group>";
 		};
 		1784446A292D5503008E3DF4 = {
@@ -218,6 +223,7 @@
 				C050C7512933A6FF00CE8BAB /* Perrengue.swift */,
 				C050C7532933A84300CE8BAB /* Model+Populate.swift */,
 				1746E6C32939391400C54254 /* Constants.swift */,
+				17B75F11293EB131008E55F6 /* Activity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -324,12 +330,13 @@
 				172F9EDF2936BE6F006C78E9 /* InstructionsView.swift in Sources */,
 				D3395F792936C9E500E7E20F /* TransitionToHomeView.swift in Sources */,
 				172C7BBD29394AD10010C470 /* Persistence.swift in Sources */,
-				D3D3603329369DF400A74DD6 /* HikingView.swift in Sources */,
+				D3D3603329369DF400A74DD6 /* MonitoringView.swift in Sources */,
 				1756354D293A48E7006CF1D4 /* HelpView.swift in Sources */,
+				17B75F12293EB131008E55F6 /* Activity.swift in Sources */,
 				172F9EDD2936BC07006C78E9 /* InstructionsRow.swift in Sources */,
 				172F9ED92936AFE6006C78E9 /* EmergencyRow.swift in Sources */,
 				C050C7522933A6FF00CE8BAB /* Perrengue.swift in Sources */,
-				175307242937907300990300 /* HikingSumaryView.swift in Sources */,
+				175307242937907300990300 /* MonitoringSumaryView.swift in Sources */,
 				C050C7582936876300CE8BAB /* OnboardingView.swift in Sources */,
 				C050C7542933A84300CE8BAB /* Model+Populate.swift in Sources */,
 				172F9ED7293693B8006C78E9 /* CreditsView.swift in Sources */,
@@ -342,6 +349,7 @@
 				1784447D292D5503008E3DF4 /* StayingAliveApp.swift in Sources */,
 				C050C7562936798000CE8BAB /* Onboarding1View.swift in Sources */,
 				C050C75A2936904700CE8BAB /* Onboarding2View.swift in Sources */,
+				17B75F10293E9E96008E55F6 /* MonitoringOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

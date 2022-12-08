@@ -9,7 +9,60 @@ import Foundation
 
 class Populate {
     
-    static func populateFunc () -> [Perrengue] {
+    //MARK: - Atividades
+    static func getActivities() -> [Activity] {
+        return [
+            
+            Activity(name: .hiking,
+                     imageString: "figure.hiking",
+                     workoutType: .hiking),
+            
+            Activity(name: .walking,
+                     imageString: "figure.walk",
+                     workoutType: .walking),
+            
+            Activity(name: .runnig,
+                     imageString: "figure.run",
+                     workoutType: .running),
+            
+            Activity(name: .cicling,
+                     imageString: "figure.outdoor.cycle",
+                     workoutType: .cycling),
+            
+            Activity(name: .climbing,
+                     imageString: "figure.climbing",
+                     workoutType: .climbing),
+            
+            Activity(name: .play,
+                     imageString: "figure.rugby",
+                     workoutType: .play),
+            
+            Activity(name: .skate,
+                     imageString: "figure.skating",
+                     workoutType: .skatingSports),
+            
+            Activity(name: .sailing,
+                     imageString: "figure.sailing",
+                     workoutType: .sailing),
+            
+            Activity(name: .swiming,
+                     imageString: "figure.pool.swim",
+                     workoutType: .swimming),
+            
+            Activity(name: .surf,
+                     imageString: "figure.surfing",
+                     workoutType: .surfingSports),
+            
+            Activity(name: .paddleSportrs,
+                     imageString: "oar.2.crossed",
+                     workoutType: .paddleSports)
+        
+            
+        ]
+    }
+    
+    //MARK: - Perrengues
+    static func getPerrengues () -> [Perrengue] {
         
         return [
             

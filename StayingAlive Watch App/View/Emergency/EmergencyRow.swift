@@ -24,7 +24,7 @@ struct EmergencyRow: View {
 }
 
 struct EmergencyRow_Previews: PreviewProvider {
-    static let perrengues : [Perrengue] = Populate.populateFunc()
+    static let perrengues : [Perrengue] = Populate.getPerrengues()
     
     static var previews: some View {
         EmergencyRow(perrengue: perrengues[0])

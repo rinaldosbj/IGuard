@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EmergencyView: View {
-    let perrengues : [Perrengue] = Populate.populateFunc()
+    let perrengues : [Perrengue] = Populate.getPerrengues()
     
     var body: some View {
             List{

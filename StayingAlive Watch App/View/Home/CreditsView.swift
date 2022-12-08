@@ -43,6 +43,8 @@ struct CreditsView: View {
             )
            
             }
+        .navigationTitle("Créditos")
+        .navigationBarBackButtonHidden(false)
     }
 }
 

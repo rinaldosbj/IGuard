@@ -24,7 +24,7 @@ struct InstructionsRow: View {
 }
 
 struct InstructionsRow_Previews: PreviewProvider {
-    static var perrengues = Populate.populateFunc()
+    static var perrengues = Populate.getPerrengues()
     
     static var previews: some View {
         InstructionsRow(InstructionString: perrengues[0].instructions[0])

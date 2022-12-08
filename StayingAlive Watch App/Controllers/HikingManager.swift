@@ -10,9 +10,16 @@ import HealthKit
 
 class HikingManager : NSObject, ObservableObject {
     
+    var selectedWorkout : HKWorkoutActivityType? {
+        didSet {
+            guard let selectedWorkout = selectedWorkout else { return }
+            startWorkout(workoutType: selectedWorkout)
+        }
+    }
+    
     @Published var showingSummaryView: Bool = false {
         didSet {
-            if showingSummaryView == false {
+            if showingSummaryView == false{
                 resetWorkout()
             }
         }
@@ -21,10 +28,11 @@ class HikingManager : NSObject, ObservableObject {
     let healthStore = HKHealthStore()
     var session: HKWorkoutSession?
     var builder: HKLiveWorkoutBuilder?
+
     
     func startWorkout(workoutType: HKWorkoutActivityType) {
         let configuration = HKWorkoutConfiguration()
-        configuration.activityType = .hiking
+        configuration.activityType = selectedWorkout ?? .hiking
         configuration.locationType = .outdoor
 
         // Create the session and obtain the workout builder.

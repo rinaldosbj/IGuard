@@ -33,7 +33,8 @@ struct HomeView: View {
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(lineWidth: 1 )
                         .foregroundColor(Color(Constants.TurquoiseColor))
-                    NavigationLink(destination: MonitandoView().environmentObject(HikingManager()).navigationBarBackButtonHidden(true)) {
+                    NavigationLink(destination: MonitoringOptions().environmentObject(hikingManager)
+                    ) {
                         Text("Monitorar")
                             .foregroundColor(.white)
                     }
