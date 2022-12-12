@@ -38,7 +38,7 @@ Game developed during an apple developer academy challenge.
 
 <td align="center"><a href="https://github.com/hummjoao"><img src="https://avatars.githubusercontent.com/u/108694473?v=4" width="100px;" alt=""/><br /><sub><b>João Pedro Monteiro</b></sub></a><br/></td>
 
-<td align="center"><a href="https://github.com/BrunaAvellar88"><img src="https://instagram.frec3-1.fna.fbcdn.net/v/t51.2885-15/41789489_1071381626369737_7993145901354924410_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.frec3-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=D8UIDdAnQjwAX_OOsyD&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MTg4MDExNDM3NDkxMDAxMDYwMA%3D%3D.2-ccb7-5&oh=00_AfBIpemwzkI0AJmi5xNXf6-C6yojxjbK1fv2-xTJAWQ5WQ&oe=639C1BD2&_nc_sid=30a2ef" width="100px;" alt=""/><br /><sub><b>João Pedro Monteiro</b></sub></a><br/></td>
+<td align="center"><a href="https://github.com/BrunaAvellar88"><img src="https://instagram.frec3-1.fna.fbcdn.net/v/t51.2885-15/41789489_1071381626369737_7993145901354924410_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.frec3-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=D8UIDdAnQjwAX_OOsyD&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MTg4MDExNDM3NDkxMDAxMDYwMA%3D%3D.2-ccb7-5&oh=00_AfBIpemwzkI0AJmi5xNXf6-C6yojxjbK1fv2-xTJAWQ5WQ&oe=639C1BD2&_nc_sid=30a2ef" width="100px;" alt=""/><br /><sub><b>Bruna Avellar</b></sub></a><br/></td>
 </tr>
  </table>
 
