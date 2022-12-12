@@ -26,7 +26,7 @@ Apple Watch app developed during an apple developer academy challenge.
 
 ## About The Project
 
-Game developed during an apple developer academy challenge.
+Developed by
 
 <table>
   <tr>
