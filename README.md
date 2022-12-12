@@ -8,7 +8,7 @@ App Developed in the challenge Qatar at the Apple Developers Academy | UFPE here
     <img src="./StayingAlive%20Watch%20App/Assets.xcassets/AppIcon.appiconset/App%20Icon-2.png" alt="Logo" width="50%">
   </a>
 
-  <h3 align="center">Spelling Bubbles</h3>
+  <h3 align="center">iGuard</h3>
 
   <p align="center">
 Game developed during an apple developer academy challenge.
