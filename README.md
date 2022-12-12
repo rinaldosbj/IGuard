@@ -11,7 +11,7 @@ App Developed in the challenge Qatar at the Apple Developers Academy | UFPE here
   <h3 align="center">iGuard</h3>
 
   <p align="center">
-Game developed during an apple developer academy challenge.
+Apple Watch app developed during an apple developer academy challenge.
     <br />
     <a href="https://github.com/RinaldoJr4/StayingAlive"><strong>Explore the docs »</strong></a>
     <br />
