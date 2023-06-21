@@ -1,4 +1,4 @@
-# StayingAlive
+# IGuard
 App Developed in the challenge Qatar at the Apple Developers Academy | UFPE here we develop a FirstAid with monitoring for WatchOS
 
 <!-- PROJECT LOGO -->
